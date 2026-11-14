@@ -7,32 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <!-- 1. LOGO -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/LogoCutB.png" alt="Logo de la marque">
-                </a>
-            </div>
+<header>
+    <nav>
+        <!-- 1. LOGO -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/LogoCutB.png" alt="Logo de la marque">
+            </a>
+        </div>
 
-            <!-- 2. MENU DE NAVIGATION -->
+        <!-- 2. MENU PRINCIPAL (Ligne 1 sur mobile) -->
+        <ul class="nav-principal">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#couture">Couture</a></li>
+            <li><a href="#broderie">Broderie</a></li>
+            <li><a href="#autres">Autres</a></li>
+        </ul>
+
+        <!-- 3. MENU SECONDAIRE + RECHERCHE (Ligne 2 sur mobile) -->
+        <div class="nav-secondaire">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#couture">Couture</a></li>
-                <li><a href="#broderie">Broderie</a></li>
-                <li><a href="#autres">Autres</a></li>
                 <li><a href="#apropos">À propos</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <!-- 3. BARRE DE RECHERCHE -->
             <div class="recherche-box">
                 <input type="text" id="input-recherche" placeholder="Rechercher...">
                 <button type="button" id="btn-recherche">&#128080;</button>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
     <main>
         <h1><img src="images/LogoB.png" alt="Logo de la marque"></h1>

@@ -419,3 +419,55 @@ footer {
   stroke: #000000;
   text-decoration: none;
 }
+
+/* Alignement sur ordinateur */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-principal,
+.nav-secondaire,
+.nav-secondaire ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Empêche "À propos" de se couper sur deux lignes */
+nav a {
+    white-space: nowrap;
+}
+
+/* --- VERSION MOBILE --- */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    /* Ligne 1 : Accueil, Couture, Broderie, Autres */
+    .nav-principal {
+        width: 100%;
+        justify-content: space-around;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Ligne 2 : À propos, Contact à gauche + Recherche à droite */
+    .nav-secondaire {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .nav-secondaire ul {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    .recherche-box {
+        max-width: 150px; /* Ajuste la largeur de la barre de recherche sur mobile */
+    }
+}
